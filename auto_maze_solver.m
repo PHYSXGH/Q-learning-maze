@@ -1,5 +1,5 @@
 function [] = auto_maze_solver()
-%AUTOMATICMMA Automatically calls the MMA function with different variables
+%AUTO_MAZE_SOLVER Automatically calls the maze_solver function with different variables
 %   This can be used to automatically run the agent with different alpha and
 %   gamma pairs to gather statistical data. One set will have a fixed aplha
 %   and the other will have a fixed gamma value, which can be set below.
@@ -11,9 +11,9 @@ gamma = 0.8;
 
 parfor n = 1:20
     if n <= 10
-        MMA3_auto(n/10,gamma)
+        maze_solver(n/10,gamma)
     else
-        MMA3_auto(alpha,(n-10)/10)
+        maze_solver(alpha,(n-10)/10)
     end
 end
 
