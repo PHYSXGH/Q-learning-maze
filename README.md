@@ -14,7 +14,7 @@
  
 #### The following is used to update the Q-matrix
 ```
-Q(prevX,prevY,direction) = Q(prevX,prevY,direction) + alpha*(R+gamma*max(Q(X,Y,:)) - Q(prevX,prevY,direction))
+Q(prevX,prevY,direction) = Q(prevX,prevY,direction) + alpha*(R+gamma*max(Q(X,Y,:)) - Q(prevX,prevY,direction));
 ```
  
 #### It changes to the below if eligibility traces are enabled
